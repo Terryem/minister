@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Honourable Minister of Environment - Business Card</title>
 <style>
-  :root {
+    :root {
     color-scheme: light;
     --green-900: #123d2c;
     --green-700: #246746;
@@ -30,6 +30,18 @@
     background: #edf3ee;
     color: var(--ink);
     font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  }
+  a { 
+    /* color: var(--green-900); */
+     color: #246746;
+    text-decoration: none;
+  }
+
+  .aaa {
+    margin-bottom: -10px;
+    margin-top: 9px;
+    color: #246746;
+    
   }
 
   .scene {
@@ -86,7 +98,7 @@
   .frn {
     margin-bottom: 10px;
     color: var(--green-700);
-    font-size: 10px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
   }
@@ -97,6 +109,8 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 1.12;
+    /* text-decoration: u; */
+    text-transform: uppercase;
   }
   .ministry {
     margin: 0;
@@ -108,7 +122,7 @@
   }
 
   .rule {
-    width: 54px;
+    width: 69%;
     height: 3px;
     margin: 15px 0;
     border: 0;
@@ -248,6 +262,7 @@
   @media (prefers-reduced-motion: reduce) {
     .card, .flip-button { transition: none; }
   }
+
 </style>
 </head>
 <body>
@@ -259,11 +274,20 @@
           <img class="coat" src="coat-of-arm.png" alt="Coat of arms of Nigeria">
         </div>
         <div class="identity">
-          <div class="frn">FEDERAL REPUBLIC OF NIGERIA</div>
-          <h1 class="ministry">Honourable Minister, <br> </h1>
+        
           <h1 class="env">Federal Ministry of Environment</h1>
+          <br>
+          <div class="item">
+            <span class="item-label aa"> <strong class="aaa"> <span style="color: Black; font-size: 12px;">Phone: </span> +234 800 000 000</strong> </span>
+            <span class="item-label aa"> <strong class="aaa"><a href="https://environment.gov.ng"> <span style="color: Black; font-size: 12px;">Website: </span> www.environment.gov.ng</a></strong> </span>
+            
+           
+            
+          </div><br>
           <hr class="rule">
-          <div class="title">HONOURABLE MINISTER OF ENVIRONMENT</div>
+          <!-- <br> -->
+    
+          <div class="title">HONOURABLE MINISTER, ENVIRONMENT</div>
           <div class="name">BALARABE ABBAS LAWAL</div>
         </div>
       </section>
@@ -286,13 +310,13 @@
             Federal Ministry of Environment,<br>Mabushi, Abuja, FCT, Nigeria
           </div>
         </div>
-        <div class="motto">Unity and Faith, Peace and Progress</div>
+        <!-- <div class="motto">Unity and Faith, Peace and Progress</div> -->
       </section>
     </div>
   </main>
 
-  <button class="flip-button" id="flipBtn" type="button" aria-pressed="false">View reverse</button>
-  <p class="hint">Use the button to view the reverse side.</p>
+  <!-- <button class="flip-button" id="flipBtn" type="button" aria-pressed="false">View reverse</button> -->
+  <!-- <p class="hint">Use the button to view the reverse side.</p> -->
 
   <script>
     const card = document.getElementById('bizCard');
